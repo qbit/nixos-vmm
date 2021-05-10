@@ -4,8 +4,11 @@ A nix expression to build OpenBSD VMM friendly ISOs.
 
 ## What it does:
 
-- Configures NixOS to use the serial console: `console=ttyS0,115200n8`.
-- Installs the [vmm_clock](https://github.com/voutilad/vmm_clock) and [virtio_vmmci](https://github.com/voutilad/virtio_vmmci) kernel modules.
+Creates a NixOS install ISO with the following pre-configured for OpenBSD's
+VMM:
+
+- NixOS will use the serial console: `console=ttyS0,115200n8`.
+- [vmm_clock](https://github.com/voutilad/vmm_clock) and [virtio_vmmci](https://github.com/voutilad/virtio_vmmci) kernel modules are installed.
 - Installs `tmux`, `vim` and `mg` into the ram disk for usage during the
   install.
 
