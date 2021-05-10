@@ -1,6 +1,6 @@
 # NixOS VMM
 
-A nix expression to build OpenBSD VMM friendly ISOs.
+A nix expression to build OpenBSD VMM friendly install ISOs.
 
 ## What it does:
 
