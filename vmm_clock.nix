@@ -12,7 +12,6 @@ stdenv.mkDerivation rec {
     sha256 = "0hg7ywznh6v11fywsz6f7w298bxph0wwm046zqaqncjvr4aizla4";
   };
 
-  #sourceRoot = "";
   hardeningDisable = [ "pic" "format" ];
   nativeBuildInputs = kernel.moduleBuildDependencies;
 
@@ -28,7 +27,8 @@ stdenv.mkDerivation rec {
   ];
 
   meta = with lib; {
-    description = "Experimental implementation of a kvmclock-derived clocksource for Linux guests under OpenBSD's hypervisor";
+    description =
+      "Experimental implementation of a kvmclock-derived clocksource for Linux guests under OpenBSD's hypervisor";
     homepage = "https://github.com/voutilad/vmm_clock";
     license = licenses.gpl2;
     maintainers = [ maintainers.makefu ];
