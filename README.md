@@ -52,3 +52,14 @@ nixos-20.09.4064.1b688ca59ba-x86_64-linux.iso
 %
 ```
 
+### Pre-built ISO
+
+If you don't have an existing NixOS machine to build the ISO with, here is a pre-built ISO that can be used:
+
+| File | Purpose |
+| --- | --- |
+| [nixos-21.11.334934.8a053bc2255-x86_64-linux.iso](https://deftly.net/nixos-21.11.334934.8a053bc2255-x86_64-linux.iso) | Minimal install ISO with vmm kernel modules |
+| [nixos-21.11.334934.8a053bc2255-x86_64-linux.iso.sha256](https://deftly.net/nixos-21.11.334934.8a053bc2255-x86_64-linux.iso.sha256) | SHA256 signature for the ISO |
+| [nixos-21.11.334934.8a053bc2255-x86_64-linux.iso.sha256.asc](https://deftly.net/nixos-21.11.334934.8a053bc2255-x86_64-linux.iso.sha256.asc) | GPG Signature for the sha256 file |
+
+
