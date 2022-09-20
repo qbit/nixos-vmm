@@ -10,8 +10,7 @@ jobs:
         with:
           nix_path: nixpkgs=channel:nixos-22.05-small
       - run: nix-build '<nixpkgs/nixos>' -A config.system.build.isoImage -I nixos-config=iso-builder.nix
-      - uses: actions/upload-artifact@v3
+      - uses: cachix/cachix-action@v10
         with:
-          name: nixos-stable-iso
-          path: result/iso/nixos-22.05*.iso
-          if-no-files-found: error
+          name: qbit-nixos-vmm
+          authToken: '${{ secrets.CACHIX_AUTH_TOKEN }}'
